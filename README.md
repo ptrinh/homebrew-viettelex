@@ -1,6 +1,6 @@
 # homebrew-viettelex
 
-Homebrew tap cho [ViệtTelex](https://github.com/ptrinh/VietTelex) — bộ gõ tiếng Việt Telex cho macOS.
+Homebrew tap cho [ViệtTelex](https://github.com/ptrinh/viettelex) — bộ gõ tiếng Việt Telex cho macOS.
 
 ```bash
 brew install --cask ptrinh/viettelex/viettelex

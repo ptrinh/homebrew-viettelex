@@ -2,10 +2,10 @@ cask "viettelex" do
   version "1.1.1"
   sha256 "f3d4040f929201f5de571c02fd843f41bf043c4cdddae1c1c4c28d9871f91d7b"
 
-  url "https://github.com/ptrinh/VietTelex/releases/download/v#{version}/VietTelex-#{version}.app.zip"
+  url "https://github.com/ptrinh/viettelex/releases/download/v#{version}/VietTelex-#{version}.app.zip"
   name "ViệtTelex"
   desc "Vietnamese Telex input method"
-  homepage "https://github.com/ptrinh/VietTelex"
+  homepage "https://github.com/ptrinh/viettelex"
 
   livecheck do
     url :url
