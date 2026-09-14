@@ -18,12 +18,10 @@ cask "viettelex" do
   # user-home domain, which `installer -target /` can't run — hence artifact).
   artifact "VietTelex.app", target: "~/Library/Input Methods/VietTelex.app"
 
-  postflight do
-    lsregister = "/System/Library/Frameworks/CoreServices.framework/Frameworks/" \
-                 "LaunchServices.framework/Support/lsregister"
-    system_command lsregister,
-                   args: ["-f", "#{Dir.home}/Library/Input Methods/VietTelex.app"]
-  end
+  # Không còn postflight: Homebrew deprecate block Ruby `postflight` (issue #81,
+  # 14/09/2026) và `postflight_steps` mới không cho system_command. lsregister -f
+  # chỉ là best-effort — TIS tự quét ~/Library/Input Methods; caveat bên dưới đã
+  # dặn đăng xuất/đăng nhập nếu chưa thấy.
 
   uninstall quit: "com.viettelex.inputmethod.telex"
 
