@@ -1,6 +1,6 @@
 cask "viettelex" do
-  version "1.7.11"
-  sha256 "fb7214d4774f4823da6a996cf145bbea9c7abac575fc82208208e6e82cff8419"
+  version "1.7.12"
+  sha256 "f6860a52b7a44782c0b0d7e81cc8a4bc21bda50a2876f500199ccc25ab6e2439"
 
   url "https://github.com/ptrinh/viettelex/releases/download/v#{version}/VietTelex-#{version}.app.zip"
   name "ViệtTelex"
